@@ -1,5 +1,5 @@
 {
-  "name": "dsh-balance",
+  "name": "@wyxcn445/dsh-balance",
   "version": "0.1.1",
   "description": "DSH 插件：在输入框工具行实时显示 DeepSeek 账户余额（充值余额 + 赠送额度），点击展开明细与用量/充值入口。",
   "type": "module",
@@ -26,15 +26,18 @@
     "account"
   ],
   "license": "MIT",
-  "author": "OWNER",
+  "author": "Wyxcn445",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-balance.git"
+    "url": "git+https://github.com/Wyxcn445/dsh-balance.git"
   },
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-balance/issues"
+    "url": "https://github.com/Wyxcn445/dsh-balance/issues"
   },
-  "homepage": "https://github.com/OWNER/dsh-balance#readme",
+  "homepage": "https://github.com/Wyxcn445/dsh-balance#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

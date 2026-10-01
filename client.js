@@ -7,7 +7,7 @@
 // 界面职责：在「输入框工具行」右侧（conversation.input.right 插槽）渲染一个余额胶囊，
 // 数据经本插件的宿主端只读接口 /api/dsh-balance 获取，按固定周期轮询刷新。
 window.__ModuleLoader__.load({
-  id: 'dsh-balance',
+  id: '@wyxcn445/dsh-balance',
   factory: function (require) {
     var module = { exports: {} }
     var exports = module.exports
