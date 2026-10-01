@@ -1,0 +1,67 @@
+{
+  "name": "dsh-balance",
+  "version": "0.1.1",
+  "description": "DSH 插件：在输入框工具行实时显示 DeepSeek 账户余额（充值余额 + 赠送额度），点击展开明细与用量/充值入口。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "plugin",
+    "balance",
+    "account"
+  ],
+  "license": "MIT",
+  "author": "OWNER",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-balance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-balance/issues"
+  },
+  "homepage": "https://github.com/OWNER/dsh-balance#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-host-webserver": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-host-webserver": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

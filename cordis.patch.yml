@@ -1,0 +1,6 @@
+# dsh-balance bundle patch：把本插件插入 web profile 名册。
+# 宿主端（exports "."）注册只读接口 /api/dsh-balance，经 DSH 内置 deepseekAccount 服务读取余额；
+# 浏览器端（exports "./client"）在输入框工具行右侧渲染余额胶囊。
+- insert:
+    - id: dsh-balance
+      name: dsh-balance
